@@ -1,36 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
 
+@font-face {
+    font-family: quicksand;
+    src: url(assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Reem Kufi Ink', sans-serif;
-    text-transform: uppercase;
+    font-family: quicksand, 'Reem Kufi Ink', sans-serif;
 }
-body {
+body{
     background: linear-gradient(135deg, #705f93, #758e87);
     height: 100vh;
-    background-size: cover;
-}
-.c-s {
-    font-size: 5rem;
-    position: relative;
-    text-align: center;
+    width: 100%;
     color: #fdfefe;
-    top: 30vh;
+}
+.general-container {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 .count-down {
-    width: 50%;
-    position: relative;
+    padding-top: 50px;
+    display: flex;
+    width: 70%;
     margin: auto;
     justify-content: space-between;
-    align-items: center;
-    display: flex;
-    top: 40vh;
-    font-size: 1.8rem;
-    color: #fdfefe;
-}
-.contain {
-    display: block;
-    text-align: center;
 }
