@@ -22,10 +22,9 @@ body{
     font-size: 1.6rem;
     width: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30vh;
+    margin: auto;
     display: block;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 .count-down {
@@ -39,21 +38,5 @@ body{
 @media screen and (max-width: 900px) {
     * {
         font-size: 1rem;
-    }
-    .general-container {
-        text-transform: uppercase;
-        width: 100%;
-        position: absolute;
-        display: block;
-        transform: translateY(-50%);
-        text-align: center;
-    }
-    .count-down {
-        padding-top: 50px;
-        display: flex;
-        width: 100%;
-        margin: auto;
-        justify-content: space-between;
-        align-items: center;
     }
 }
