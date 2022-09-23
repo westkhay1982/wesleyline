@@ -40,4 +40,13 @@ body{
     * {
         font-size: 1rem;
     }
+    .general-container {
+        text-transform: uppercase;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        display: block;
+        transform: translateY(-50%);
+        text-align: center;
+    }
 }
