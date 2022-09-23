@@ -39,4 +39,7 @@ body{
     * {
         font-size: 1rem;
     }
+    .count-down {
+        display: block;
+    }
 }
