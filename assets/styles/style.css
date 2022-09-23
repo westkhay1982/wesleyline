@@ -35,11 +35,17 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.c-s {
+    font-size: 2rem;
+}
 @media screen and (max-width: 900px) {
     * {
         font-size: 1rem;
     }
     .count-down {
         display: block;
+    }
+    .c-s {
+        font-size: 1.6rem;
     }
 }
