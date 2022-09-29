@@ -1,54 +1,246 @@
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap');
 
-@font-face {
-    font-family: quicksand;
-    src: url(assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
-}
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: quicksand, 'Reem Kufi Ink', sans-serif;
+    cursor: default;
+    font-family: 'poppins', sans-serif;
 }
-body{
-    background: linear-gradient(135deg, #705f93, #758e87);
-    height: 100vh;
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+label, button {
+    cursor: pointer;
+}
+.nav-bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    align-items: center;
+    padding: 0 50px;
+    background: linear-gradient(-135deg, #0d80e9, #0350cb);
+    color: #ecf1f1;
     width: 100%;
-    color: #fdfefe;
+    height: 12vh;
+    z-index: 999;
+    backdrop-filter: blur(3px);
+    transition: all 0.5s ease-in-out;
 }
-.general-container {
+.menu-button {
+    top: 0;
+    position: absolute;
+    line-height: 12vh;
+    right: 50px;
+    cursor: pointer;
+}
+nav .menu-drop:before{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    left: 200px;
+    border-radius: 3px;
+    z-index: -1;
+    top: -9px;
+    background: #0d80e9;
+    transform: rotate(45deg);
+}
+.menu-drop {
     text-transform: uppercase;
-    font-size: 1.6rem;
-    width: 50%;
-    position: relative;
-    top: 30vh;
-    margin: auto;
+    border-radius: 5px;
+    position: absolute;
+    right: 35px;
+    background: #0d80e9;
+    top: 14vh;
+    width: 250px;
+    padding: 15px;
+    text-align: left;
+    display: none;
+    transition: all .3s ease;
+}
+.sub-menu-drop {
+    display: none;
+    transition: all 0.5s ease;
+    padding-left: 20px;
+}
+[id^=main-btn], [id^=sub-btn-1], [id^=sub-btn-2] {
+    display: none;
+}
+[id^=main-btn]:checked + .menu-drop,  
+[id^=sub-btn-1]:checked + .sub-menu-drop, 
+[id^=sub-btn-2]:checked + .sub-menu-drop{
     display: block;
+}
+.land-mine{
+    position: relative;
+    top: 15vh;
+    color: black;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    font-size: 20px;
+    height: calc(100vh-15vh);
+    border-bottom: #0350cb solid 1px;
+}
+@media screen and (max-width: 900px) {
+    .land-mine{
+        flex-direction: column;
+    }
+    .land-mine-text{
+        text-align: center;
+    }
+}
+.body{
+    position: relative;
+    margin-top: 17vh;
+}
+.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 20px;
     text-align: center;
 }
-.count-down {
-    padding-top: 50px;
+/* products */
+.prod-cards{
+    transition: all 0.4s ease-in-out;
+    width: 90%;
     display: flex;
-    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
     margin: auto;
+}
+.product-label{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.product-description {
+    display: none;
+    font-size: smaller;
+}
+input[type=checkbox] {
+    transition: all 0.5s ease;
+    display: none;
+}
+[id^=drop-check-1]:checked + .product-description,
+[id^=drop-check-2]:checked + .product-description,
+[id^=drop-check-3]:checked + .product-description,
+[id^=drop-check-4]:checked + .product-description{
+    display: block;
+}
+.featured-cards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    margin: auto;
+}
+.card {
+    width: 30%;
+    background: #0350cb;
+    color: #ecf1f1;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+@media screen and (max-width: 900px) {
+    .featured-cards{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+}
+.lm-basic {
+    background: #ecf1f1;
+    border: none;
+    font-size: 1.2rem;
+    color: #0350cb;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+footer {
+    min-height: 35vh;
+    width: 100%;
+    position: relative;
+    background: #ecf1f1;
+}
+.footer-house {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    width: 80%;
+    margin: auto;
+}
+.house-captain {
+    width: 30%;
+}
+.house-captain ul li {
+    padding: 10px;
+}
+.house-captain-2 ul li, .house-captain-3 ul li {
+    padding: 5px;
+}
+
+
+/* handling blog posts */
+.blog-post {
+    padding: 20px;
+}
+.blog-item{
+    width: 75%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.c-s {
-    font-size: 3rem;
+.left-side {
+    width: 40%;
+}
+.right-side {
+    width: 50%;
 }
 @media screen and (max-width: 900px) {
-    * {
-        font-size: 1rem;
+    .blog-item{
+        width: 90%;
+        margin: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .general-container {
-        width: 100%;
-    }
-    .count-down {
-        display: block;
-    }
-    .c-s {
-        font-size: 1.6rem;
+    .left-side, .right-side{
+        width: 75%;
     }
 }

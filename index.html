@@ -5,36 +5,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/style.css">
-    <title>WeSLeYLine | Coming Soon</title>
+    <script src="https://kit.fontawesome.com/a172bb831b.js" crossorigin="anonymous"></script>
+    <title>WesleyLine.com</title>
 </head>
 <body>
-    <header>
-        <div class="general-container">
-            <div class="c-s">coming soon</div>
-            <div class="count-down">
-                <div class="contain">
-                    <div id="days"></div>
-                    <div class="tag">days</div>
-                </div>
-                <div>:</div>
-                <div class="contain">
-                    <div id="hours"></div>
-                    <div class="tag">hours</div>
-                </div>
-                <div>:</div>
-                <div class="contain">
-                    <div id="minutes"></div>
-                    <div class="tag">minutes</div>
-                </div>
-                <div>:</div>
-                <div class="contain">
-                    <div id="seconds"></div>
-                    <div class="tag">seconds</div>
+    <!-- header -->
+    <div class="nav-bar">
+        <h1 class="logo">WesleyLine.com</h1>
+        <nav>
+            <label for="main-btn" class="menu-button" id="menu-button">menu  <i class="fas fa-bars"></i></label>
+            <input type="checkbox" name="" id="main-btn">
+            <ul class="menu-drop">
+                <li><a href="#home">home</a></li>
+                <li>
+                    <label for="sub-btn-1">products  <i class="fas fa-caret-down"></i></label>
+                    <input type="checkbox" name="" id="sub-btn-1">
+                    <ul class="sub-menu-drop">
+                        <li><a href="#">construction</a></li>
+                        <li><a href="#">cleaning</a></li>
+                    </ul>
+                </li>
+                <li><a href="#services">services</a></li>
+                <li>
+                    <label for="sub-btn-2">info  <i class="fas fa-caret-down"></i></label>
+                    <input type="checkbox" name="" id="sub-btn-2">
+                    <ul class="sub-menu-drop">
+                        <li><a href="#">email</a></li>
+                        <li><a href="#">call</a></li>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">telegram</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- body -->
+    <main>
+        <div class="land-mine">
+            <div class="land-mine-text">
+                <h3>WesleyLine Online Pool Shop</h3>
+                <p>Having problems keeping your swimming pool operational due to cost? Having a difficult time treating your swimming pool amidst the stormy weather?  Finding it difficult to find a shop you can trust for prices? Or are you looking to have a cleaning service you can rely on for your every need? <br>Then <span style="color: #0350cb;">WesleyLine.com</span> has you covered with our <a href="#products">products</a> and <a href="#services">services</a>.</p>
+            </div>
+            <img src="images/cleaner.jpg" alt="" width="50%">
+        </div>
+        <div class="body">
+            <!-- producuts section -->
+            <div class="products" id="products">
+                <h3 class="title">products</h3>
+                <div class="prod-cards">
+                    <div class="drop-on-tap card">
+                        <div class="product-label">Chlorine Tablets <span><label for="drop-check-1" class="drop-btn"><i class="fas fa-caret-down"></i></label></span></div>
+                        <input type="checkbox" name="" id="drop-check-1">
+                        <div class="product-description">
+                            <p>Tablets (when placed in a chlorine floater, dispenser or skimmer) produce a steady amount of chlorine residue keeping your swimming pool sanitized and high enough.</p>
+                            <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="drop-on-tap card">
+                        <div class="product-label">chlorine granules <span><label for="drop-check-2" class="drop-btn"><i class="fas fa-caret-down"></i></label></span></div>
+                        <input type="checkbox" name="" id="drop-check-2">
+                        <div class="product-description">
+                            <p>Chlorine granules is a quick sure way of keeping your swimming pool clean. It has a high rate of dissolution making it a good choice for whenever you’re in a pinch</p>
+                            <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="drop-on-tap card">
+                        <div class="product-label">Flocculant <span><label for="drop-check-3" class="drop-btn"><i class="fas fa-caret-down"></i></label></span></div>
+                        <input type="checkbox" name="" id="drop-check-3">
+                        <div class="product-description">
+                            <p>Flocculant is a pool chemical that clumps together particles in the pool water and sends them to the bottom of the pool to vacuumed</p>
+                            <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="drop-on-tap card">
+                        <div class="product-label">ph plus <span><label for="drop-check-4" class="drop-btn"><i class="fas fa-caret-down"></i></label></span></div>
+                        <input type="checkbox" name="" id="drop-check-4">
+                        <div class="product-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perspiciatis ex tempore ullam. Ex et, consequatur perferendis inventore unde nostrum.</p>
+                            <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- services section -->
+            <div class="services" id="services">
+                <h3 class="title">services</h3>
+                <div class="featured-cards">
+                    <div class="time-card card">
+                        <i class="far fa-clock"></i>
+                        <h5>Work Hours</h5>
+                        <p>week days</p>
+                        <div class="hours"><span>9:00</span><span>-</span><span>18:00</span></div>
+                        <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
+                    </div>
+                    <div class="delivery-card card">
+                        <i class="far fa-clock"></i>
+                        <h5>Delivery service</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed veritatis similique eveniet corrupti natus. Eligendi.</p>
+                    <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
+                </div>
+                <div class="support-card card">
+                    <i class="far fa-clock"></i>
+                    <h5>Work Hours</h5>
+                    <p>week days</p>
+                    <div class="hours"><span>9:00</span><span>-</span><span>18:00</span></div>
+                    <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
+                </div>
+            </div>
+            </div>
+            <!-- blog posts -->
+            <div class="blog-posts" id="blog">
+                <h3 class="title">Tips</h3>
+                <p style="text-align: center; font-size: 30px; text-transform:uppercase;">coming soon</p>
+                <!-- blog post template -->
+                <!-- <div class="blog-post">
+                    <div class="blog-item">
+                        <div class="left-side">
+                            <img src="" alt="Pool Handling Tips This Season">
+                            <h6>Pool Handling Tips This Season</h6>
+                        </div>
+                        <div class="right-side">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur earum eligendi, natus numquam possimus dignissimos alias corrupti sed harum delectus soluta vero sapiente tenetur saepe. Molestias modi quod consequuntur.</p>
+                            <a href="#"><button class="lm-basic">learn more >></button></a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- social media and youtube posts connected to the blog posts -->
         </div>
-        </header>
-
-    <script src="assets/js/main.js"></script>
+    </main>
+    <footer>
+        <ul class="footer-house">
+            <li class="house-captain">
+                <ul>
+                    <li>
+                        <h4>shop</h4>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis cum iure quibusdam.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="house-captain-2">
+                Overview
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">products</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
+            </li>
+            <li class="house-captain-3">
+                <ul>
+                    <li>reach us via</li>
+                    <li><a href="mailto: "><i class="material-symbols-outlined">mail</i>westkhay1982@gmail.com</a></li>
+                    <li><a href="tel: "><i class="material-symbols-outlined">phone</i>+233 54 970 85 61</a></li>
+                    <!-- and other socials -->
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    <script src='assets/js/main.js'>
+    </script>
 </body>
 </html>
