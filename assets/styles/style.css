@@ -38,9 +38,6 @@ label, button {
     .nav-bar {
         padding: 0 10px;
     }
-    .menu-button {
-        right: 10px;
-    }
 }
 .menu-button {
     top: 0;
@@ -48,6 +45,11 @@ label, button {
     line-height: 12vh;
     right: 50px;
     cursor: pointer;
+}
+@media screen and (max-width: 900px){
+    .menu-button {
+        right: 10px;
+    }   
 }
 nav .menu-drop:before{
     position: absolute;
