@@ -206,7 +206,7 @@ input[type=checkbox] {
 [id^=drop-check-2]:checked + .product-description,
 [id^=drop-check-3]:checked + .product-description,
 [id^=drop-check-4]:checked + .product-description{
-    height: 100vh;
+    height: fit-content;
 }
 .featured-cards {
     width: 90%;
