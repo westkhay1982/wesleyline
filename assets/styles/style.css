@@ -16,7 +16,7 @@ a{
 li {
     list-style: none;
 }
-label, button {
+label, button, i, .men-txt {
     cursor: pointer;
 }
 .nav-bar {
@@ -38,18 +38,50 @@ label, button {
     .nav-bar {
         padding: 0 10px;
     }
+    .logo {
+        font-size: 20px;
+    }
 }
 .menu-button {
     top: 0;
-    position: absolute;
-    line-height: 12vh;
     right: 50px;
     cursor: pointer;
+    transition: all 0.4s ease-in-out 0s;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-@media screen and (max-width: 900px){
+.active-menu {
+    border-radius: 10px;
+    width: 90px;
+    padding: 0 10px;
+    background: #ecf1f1;
+    border: none;
+    color: #0350cb;
+}
+@media screen and (max-width: 900px) {
     .menu-button {
+        top: 0;
         right: 10px;
-    }   
+        cursor: pointer;
+        transition: all 0.4s ease-in-out 0s;
+        width: fit-content;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .men-txt {
+        display: none;
+    }
+    .active-menu {
+        border-radius: 10px;
+        width: fit-content;
+        padding: 0 15px;
+        background: #ecf1f1;
+        border: none;
+        color: #0350cb;
+    }
 }
 nav .menu-drop:before{
     position: absolute;
@@ -59,7 +91,7 @@ nav .menu-drop:before{
     left: 200px;
     border-radius: 3px;
     z-index: -1;
-    top: -9px;
+    top: -8.8px;
     background: #0d80e9;
     transform: rotate(45deg);
 }
@@ -75,6 +107,16 @@ nav .menu-drop:before{
     text-align: left;
     display: none;
     transition: all .3s ease;
+}
+@media screen and (max-width: 900px) {
+    nav .menu-drop:before {
+        left: 225.8px;
+        border-radius: 0;
+    }
+    .menu-drop {
+        right: 7px;
+        border-top-right-radius: 0;
+    }
 }
 .sub-menu-drop {
     display: none;
@@ -140,9 +182,21 @@ nav .menu-drop:before{
     text-transform: uppercase;
     font-weight: 600;
 }
+@media screen and (max-width: 900px) {
+    .product-label {
+        font-size: 1.2rem;
+    }
+}
+/* .number-1 {
+    height: 10vh;
+    overflow: hidden;
+    transition: all 0.3s ease;
+} */
 .product-description {
-    display: none;
+    height: 0;
     font-size: smaller;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 input[type=checkbox] {
     transition: all 0.5s ease;
@@ -152,7 +206,7 @@ input[type=checkbox] {
 [id^=drop-check-2]:checked + .product-description,
 [id^=drop-check-3]:checked + .product-description,
 [id^=drop-check-4]:checked + .product-description{
-    display: block;
+    height: 100vh;
 }
 .featured-cards {
     width: 90%;
@@ -162,6 +216,7 @@ input[type=checkbox] {
     align-items: stretch;
     flex-direction: row;
     margin: auto;
+    padding-top: 100px;
 }
 .card {
     width: 30%;
@@ -170,9 +225,24 @@ input[type=checkbox] {
     text-align: center;
     font-size: 1.5rem;
     border-radius: 10px;
-    padding: 20px;
     margin: 10px;
+    padding: 10px;
 }
+.card h5 {
+    font-size: 2rem;
+    padding: 5px;
+    text-decoration: underline;
+}
+/* .service-logo {
+    font-size: 150px;
+    border: none;
+    background: #fff;
+    background-position: center;
+    padding: 20px;
+    border-radius: 50%;
+    color: #0350cb;
+    margin-bottom: 50px;
+} */
 @media screen and (max-width: 900px) {
     .featured-cards{
         width: 100%;

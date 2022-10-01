@@ -13,7 +13,7 @@
     <div class="nav-bar">
         <h1 class="logo">WesleyLine.com</h1>
         <nav>
-            <label for="main-btn" class="menu-button" id="menu-button">menu  <i class="fas fa-bars"></i></label>
+            <label for="main-btn" class="menu-button" id="menu-button"><span class="men-txt">menu</span> <i class="fas fa-bars" id="menu-btn"></i></label>
             <input type="checkbox" name="" id="main-btn">
             <ul class="menu-drop">
                 <li><a href="#home">home</a></li>
@@ -92,24 +92,27 @@
                 <h3 class="title">services</h3>
                 <div class="featured-cards">
                     <div class="time-card card">
-                        <i class="far fa-clock"></i>
+                        <div class="card-content">
+                            <h5>Work Hours</h5>
+                            <p>week days</p>
+                            <div class="hours"><span>9:00</span><span>-</span><span>18:00</span></div>
+                            <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="delivery-card card">
+                        <div class="card-content">
+                            <h5>Delivery service</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed veritatis similique eveniet corrupti natus. Eligendi.</p>
+                            <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
+                        </div>
+                </div>
+                <div class="support-card card">
+                    <div class="card-content">
                         <h5>Work Hours</h5>
                         <p>week days</p>
                         <div class="hours"><span>9:00</span><span>-</span><span>18:00</span></div>
                         <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
                     </div>
-                    <div class="delivery-card card">
-                        <i class="far fa-clock"></i>
-                        <h5>Delivery service</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed veritatis similique eveniet corrupti natus. Eligendi.</p>
-                    <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
-                </div>
-                <div class="support-card card">
-                    <i class="far fa-clock"></i>
-                    <h5>Work Hours</h5>
-                    <p>week days</p>
-                    <div class="hours"><span>9:00</span><span>-</span><span>18:00</span></div>
-                    <a href="#"><button class="lm-basic">learn more <i class="fas fa-caret-right"></i></button></a>
                 </div>
             </div>
             </div>
@@ -137,6 +140,15 @@
     <footer>
         <ul class="footer-house">
             <li class="house-captain">
+                <ul>
+                    <li>
+                        <h4>shop</h4>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis cum iure quibusdam.</p>
+                    </li>
+                </ul>
+            </li>
             <li class="house-captain-2">
                 Overview
                 <ul>
@@ -148,14 +160,14 @@
             <li class="house-captain-3">
                 <ul>
                     <li>reach us via</li>
-                    <li><a href="mailto: "><i class="fas fa-envelope"></i>westkhay1982@gmail.com</a></li>
-                    <li><a href="tel: "><i class="fas fa-phone"></i>+233 54 970 85 61</a></li>
+                    <li><a href="mailto: "><i class="material-symbols-outlined">mail</i>westkhay1982@gmail.com</a></li>
+                    <li><a href="tel: "><i class="material-symbols-outlined">phone</i>+233 54 970 85 61</a></li>
                     <!-- and other socials -->
                 </ul>
             </li>
         </ul>
     </footer>
-    <script src='assets/js/main.js'>
+    <script src="assets/js/main.js">
     </script>
 </body>
 </html>
